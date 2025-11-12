@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@layer base {
+    @font-face {
+        font-family: "NotoSans-Bold";
+        src: url(/assets/fonts/static/NotoSans-Bold.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: "NotoSans-Medium";
+        src: url(/assets/fonts/static/NotoSans-Medium.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: "NotoSans-Regular";
+        src: url(/assets/fonts/static/NotoSans-Regular.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: "NotoSans-Italic";
+        src: url(../public/assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+    }
+}
+
+@layer utilities{
+    .filterBtn{
+        @apply px-4 py-1.5 border border-white/20 rounded-full text-[14px]
+    }
+    .filterBtnActive{
+        @apply text-neutral-900 bg-red-500 
+    }
+    .filterBtnInactiveBlack{
+        @apply bg-neutral-100/20 
+    }
+    .filterBtnInactiveWhite{
+        @apply bg-white shadow-sm 
+    }
+}
