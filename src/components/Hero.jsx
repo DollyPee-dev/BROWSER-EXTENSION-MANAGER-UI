@@ -9,8 +9,8 @@ const Hero = ( {theme} ) => {
 
   return (
     <div className="container text-neutral-100">
-        <div className="flex justify-between items-center mb-6">
-            <h2 className={`${theme? 'text-neutral-100' : 'text-neutral-900'} font-notoSansBold text-xl`}>Extensions List</h2>
+        <div className="flex justify-between items-center mb-6 flex-col sm:flex-row">
+            <h2 className={`${theme? 'text-neutral-100' : 'text-neutral-900'} font-notoSansBold text-xl mb-4 sm:mb-0`}>Extensions List</h2>
             <div className="flex gap-2 items-center">
                 {filters.map(filter => (
                     <div className={`${activeFilters === filter? 

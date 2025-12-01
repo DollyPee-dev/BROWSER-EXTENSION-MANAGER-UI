@@ -14,7 +14,8 @@ const Navbar = ({ theme, handleTheme }) => {
         <a href="">
           <img className='w-[140px]' src={theme ? whiteLogo : blackLogo} alt="" />
         </a>
-        <div className={`${theme? 'bg-neutral-100/10' : 'bg-black/5'} backdrop-blur-md p-2 rounded-md cursor-pointer`}>
+        <div className={`${theme? 'bg-neutral-100/10' : 'bg-black/5'} backdrop-blur-md p-2 rounded-md cursor-pointer 
+        border border-transparent hover:border-red-400`}>
           <img onClick={() => handleTheme()} src={theme ? sunIcon : moonIcon} alt="" />
         </div>
       </nav>
